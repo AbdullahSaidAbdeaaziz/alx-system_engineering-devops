@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -n 'p' & sed -n 'n'
+grep -n '' | cut -d: -f1 | grep -n '' | grep -v ':2$' | cut -d: -f2
