@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -n 'p' | sed -n 'n'
+sed -n 'p' & sed -n 'n'
