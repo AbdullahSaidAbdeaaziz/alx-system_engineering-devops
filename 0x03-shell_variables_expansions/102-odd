@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -n '' | cut -d: -f1 | grep -n '' | grep -v ':2$' | cut -d: -f2
+paste -d, - - | cut -d , -f1
