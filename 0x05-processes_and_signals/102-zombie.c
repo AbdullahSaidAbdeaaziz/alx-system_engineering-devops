@@ -4,6 +4,20 @@
 #include <unistd.h>
 
 /**
+ * infinite_while - creates an infinite loop
+ *
+ * Return: Always 0 (Success)
+ */
+int infinite_while(void)
+{
+	while (1)
+	{
+		sleep(1);
+	}
+	return (0);
+}
+
+/**
  * main - creates 5 zombie processes.
  *
  * Return: Always 0 (Success)
@@ -33,16 +47,3 @@ int main(void)
 	return (EXIT_SUCCESS);
 }
 
-/**
- * infinite_while - creates an infinite loop
- *
- * Return: Always 0 (Success)
- */
-int infinite_while(void)
-{
-	while (1)
-	{
-		sleep(1);
-	}
-	return (0);
-}
